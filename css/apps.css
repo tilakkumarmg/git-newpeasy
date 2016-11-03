@@ -1,0 +1,316 @@
+@font-face {
+  font-family: Proxima;
+  src: url('fonts/ProximaNova-Light.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+    font-family:Proxima;
+}
+
+.apps-box{
+    min-width: 2.5%;
+    overflow: hidden;
+    background:url(../imgs/Apps.png) no-repeat center center ;
+    margin-left: 91%;
+    background-size: cover;
+    position: fixed;
+    top:2%;
+
+}
+.apps-box:before{
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+.setting-box{
+
+    min-width: 2.5%;
+    overflow: hidden;
+    background:url(../imgs/Settings.png) no-repeat center center ;
+    margin-left: 96%;
+    background-size: cover;
+    position: fixed;
+    top:2%;
+}
+
+.setting-box:before{
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+.intranet-box{
+    min-width: 14%;
+    overflow: hidden;
+    background:url(../imgs/Intranet.png) no-repeat center center ;
+    margin-left: 10%;
+    background-size: cover;
+    position: fixed;
+    top:14%;
+}
+
+.intranet-box:before{
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+.guest-box{
+    min-width: 14%;
+    overflow: hidden;
+    background:url(../imgs/Guest.png) no-repeat center center ;
+    margin-left: 10%;
+    background-size: cover;
+    position: fixed;
+    top:14%;
+}
+
+.guest-box:before{
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+.lock-box {
+
+    min-width: 14%;
+    overflow: hidden;
+    background:url(../imgs/lock.png) no-repeat center center ;
+    margin-left: 26%;
+    background-size: cover;
+    position: fixed;
+    top:14%;
+}
+
+.lock-box:before{
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+.mcloud-box{
+
+    min-width: 14%;
+    overflow: hidden;
+    background:url(../imgs/mcloud.png) no-repeat center center ;
+    margin-left: 42%;
+    background-size: cover;
+    position: fixed;
+    top:14%;
+
+}
+
+.mcloud-box:before{
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+.password-box {
+
+    min-width: 14%;
+    overflow: hidden;
+    background:url(../imgs/password.png) no-repeat center center ;
+    margin-left: 58%;
+    background-size: cover;
+    position: fixed;
+    top:14%;
+}
+
+.password-box:before{
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+.network-box{
+    min-width: 14%;
+    overflow: hidden;
+    background:url(../imgs/networksettings.png) no-repeat center center ;
+    margin-left: 74%;
+    background-size: cover;
+    position: fixed;
+    top:14%;
+}
+
+.network-box:before{
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+.usbapp-box{
+
+    min-width: 14%;
+    overflow: hidden;
+    background:url(../imgs/usb.png) no-repeat center center ;
+    margin-left: 42%;
+    background-size: cover;
+    position: fixed;
+    top:14%;
+}
+
+.usbapp-box:before{
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+
+.browser-box {
+    min-width: 14%;
+    overflow: hidden;
+    background:url(../imgs/Browser.png) no-repeat center center ;
+    margin-left: 10%;
+    background-size: cover;
+    position: fixed;
+    top:14%;
+}
+
+.browser-box:before{
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+.skype-box{
+    min-width: 14%;
+    overflow: hidden;
+    background:url(../imgs/skype.png) no-repeat center center ;
+    margin-left: 26%;
+    background-size: cover;
+    position: fixed;
+    top:14%;
+}
+
+.skype-box:before{
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+.w3-btn-floating {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+}
+
+.slidercss{
+  position: fixed;
+  left: 10%;
+  top: 10.75%;
+  width: 80%;
+  height: 41.5%;
+}
+
+.divider-box{
+
+    width: 0.25%;
+    height: 6.5%;
+    overflow: hidden;
+    /*background:url(../imgs/divider.png) no-repeat center center ;*/
+    margin-left: 94.75%;
+    background-size: cover;
+    position: fixed;
+    top:1%;
+
+}
+
+.divider-box:before{
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+.appsdivcss{
+  position: fixed;
+  top: 10.75%;
+  width: 100%;
+  height: 41.75%;
+}
+
+.textinputip{
+	color: #fff;
+  position: fixed;
+  font-size: 18px;
+  margin-left: 2.5%;
+  letter-spacing: 2px;
+  bottom: 1.5%;
+
+}
+
+.textinputotp{
+  color: #fff;
+  position: fixed;
+  font-size: 18px;
+  margin-left:48%;
+  letter-spacing: 2px;
+  bottom: 1.5%;
+  }
+
+.messagedisplay{
+  position: fixed;
+  top: 42%;
+  margin-left: 6%;
+}
+
+.block{
+  display: inline-block;
+}
+
+.ipguestmode{
+  color: #fff;
+  position: fixed;
+  font-size: 18px;
+  margin-left:10%;
+  letter-spacing: 2px;
+  bottom: 16%;
+}
+
+.passwordguestmode{
+  color: #fff;
+  position: fixed;
+  font-size: 18px;
+  margin-left:10%;
+  letter-spacing: 2px;
+  bottom: 10%;
+}
+
+.appleprijectorname{
+  color: #fff;
+  position: fixed;
+  font-size: 18px;
+  margin-left:61%;
+  letter-spacing: 2px;
+  bottom: 10%;
+}
+
+.androidprijectorname{
+  color: #fff;
+  position: fixed;
+  font-size: 18px;
+  margin-left:83%;
+  letter-spacing: 2px;
+  bottom: 10%;
+}
+
+.wifinetwork{
+  color: #fff;
+  position: fixed;
+  font-size: 18px;
+  margin-left:10%;
+  letter-spacing: 2px;
+  bottom: 26%;
+}
+
+.ipaddresswinlinux{
+  color: #fff;
+  position: fixed;
+  font-size: 18px;
+  margin-left:29%;
+  letter-spacing: 2px;
+  bottom: 8.5%;
+}

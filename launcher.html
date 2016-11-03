@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<meta name="VER" content="1.2">
+<html>
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+     <link rel="stylesheet" type="text/css" href="css/apps.css" />
+     <script type = "text/javascript" src = "js/jquery-2.1.1.min.js"></script>
+     <script type="text/javascript">
+      $(function ()
+      {
+         $('.ancr').focus(
+              function()
+              {
+
+                  if($(this).attr("id") == "ancr_Apps")
+                      $(this).css({
+                        "width": "2.5%",
+                        "overflow": "hidden",
+                        "background":"url(./imgs/Appshover.png) no-repeat center",
+                        "margin-left": "91%",
+                        "background-size": "cover",
+                        "position": "fixed",
+                        "top":"2%"
+                      });
+                  else
+                      $(this).css({
+                        "width": "2.5%",
+                        "overflow": "hidden",
+                        "background":"url(./imgs/Settingshover.png) no-repeat center center",
+                        "margin-left": "96%",
+                        "background-size": "cover",
+                        "position": "fixed",
+                        "top":"2%"
+                      });
+              });
+
+          $('.ancr').focusout(
+              function()
+              {
+
+                  if($(this).attr("id") == "ancr_Apps")
+                      $("#ancr_Apps").css({
+                        "width": "2.5%",
+                        "overflow": "hidden",
+                        "background":"url(./imgs/Apps.png) no-repeat center center",
+                        "margin-left": "91%",
+                        "background-size": "cover",
+                        "position": "fixed",
+                        "top":"2%"});
+                  else
+                       $(this).css({
+                        "width": "2.5%",
+                        "overflow": "hidden",
+                        "background":"url(./imgs/Settings.png) no-repeat center center",
+                        "margin-left": "96%",
+                        "background-size": "cover",
+                        "position": "fixed",
+                        "top":"2%"});
+              });
+
+          $('.ancr').hover(
+              function()
+              {
+                   if($(this).attr("id") == "ancr_Apps")
+                      $(this).css({
+                        "width": "2.5%",
+                        "overflow": "hidden",
+                        "background":"url(./imgs/Appshover.png) no-repeat center",
+                        "margin-left": "91%",
+                        "background-size": "cover",
+                        "position": "fixed",
+                        "top":"2%"
+                      });
+                  else
+                      $(this).css({
+                        "width": "2.5%",
+                        "overflow": "hidden",
+                        "background":"url(./imgs/Settingshover.png) no-repeat center center",
+                        "margin-left": "96%",
+                        "background-size": "cover",
+                        "position": "fixed",
+                        "top":"2%"
+                      });
+              },
+              function()
+              {
+                  if($(this).attr("id") == "ancr_Apps")
+                      $("#ancr_Apps").css({
+                        "width": "2.5%",
+                        "overflow": "hidden",
+                        "background":"url(./imgs/Apps.png) no-repeat center center",
+                        "margin-left": "91%",
+                        "background-size": "cover",
+                        "position": "fixed",
+                        "top":"2%"});
+                  else
+                       $(this).css({
+                        "width": "2.5%",
+                        "overflow": "hidden",
+                        "background":"url(./imgs/Settings.png) no-repeat center center",
+                        "margin-left": "96%",
+                        "background-size": "cover",
+                        "position": "fixed",
+                        "top":"2%"});
+              });
+
+      });
+
+
+     $(function()
+     {
+      $('.ancrsetting').focus(
+          function()
+              {
+
+                  if($(this).attr("id") == "ancr_guest")
+                      $(this).css({
+                        "width": "14%",
+                        "overflow": "hidden",
+                        "background":"url(./imgs/GuestHover.png) no-repeat center",
+                        "margin-left": "10%",
+                        "background-size": "cover",
+                        "position": "fixed",
+                        "top":"14%"
+                      });
+
+                    else if($(this).attr("id") == "ancr_intranet")
+                          $(this).css({
+                            "width": "14%",
+                            "overflow": "hidden",
+                            "background":"url(./imgs/IntranetHover.png) no-repeat center",
+                            "margin-left": "10%",
+                            "background-size": "cover",
+                            "position": "fixed",
+                            "top":"14%"
+                          });
+
+                    else if($(this).attr("id") == "network_setting")
+                      $(this).css({
+                        "width": "14%",
+                        "overflow": "hidden",
+                        "background":"url(./imgs/networksettingsHover.png) no-repeat center",
+                        "margin-left": "74%",
+                        "background-size": "cover",
+                        "position": "fixed",
+                        "top":"14%"
+                      });
+
+
+                    else if($(this).attr("id") == "ancr_lock")
+                      $(this).css({
+                        "width": "14%",
+                        "overflow": "hidden",
+                        "background":"url(./imgs/lockHover.png) no-repeat center",
+                        "margin-left": "26%",
+                        "background-size": "cover",
+                        "position": "fixed",
+                        "top":"14%"
+                      });
+                    else if($(this).attr("id") == "ancr_mcloud")
+                      $(this).css({
+                        "width": "14%",
+                        "overflow": "hidden",
+                        "background":"url(./imgs/mcloudHover.png) no-repeat center",
+                        "margin-left": "42%",
+                        "background-size": "cover",
+                        "position": "fixed",
+                        "top":"14%"
+                      });
+                    else
+                      $(this).css({
+                        "width": "14%",
+                        "overflow": "hidden",
+                        "background":"url(./imgs/passwordHover.png) no-repeat center",
+                        "margin-left": "58%",
+                        "background-size": "cover",
+                        "position": "fixed",
+                        "top":"14%"
+                      });
+
+
+
+              });
+
+          $('.ancrsetting').focusout(
+          function()
+              {
+
+                  if($(this).attr("id") == "ancr_guest")
+                      $(this).css({
+                        "width": "14%",
+                        "overflow": "hidden",
+                        "background":"url(./imgs/Guest.png) no-repeat center",
+                        "margin-left": "10%",
+                        "background-size": "cover",
+                        "position": "fixed",
+                        "top":"14%"
+                      });
+
+                    else if($(this).attr("id") == "ancr_intranet")
+                          $(this).css({
+                            "width": "14%",
+                            "overflow": "hidden",
+                            "background":"url(./imgs/Intranet.png) no-repeat center",
+                            "margin-left": "10%",
+                            "background-size": "cover",
+                            "position": "fixed",
+                            "top":"14%"
+                          });
+
+                    else if($(this).attr("id") == "network_setting")
+                      $(this).css({
+                        "width": "14%",
+                        "overflow": "hidden",
+                        "background":"url(./imgs/networksettings.png) no-repeat center",
+                        "margin-left": "74%",
+                        "background-size": "cover",
+                        "position": "fixed",
+                        "top":"14%"
+                      });
+                    else if($(this).attr("id") == "ancr_lock")
+                      $(this).css({
+                        "width": "14%",
+                        "overflow": "hidden",
+                        "background":"url(./imgs/lock.png) no-repeat center",
+                        "margin-left": "26%",
+                        "background-size": "cover",
+                        "position": "fixed",
+                        "top":"14%"
+                      });
+                    else if($(this).attr("id") == "ancr_mcloud")
+                      $(this).css({
+                        "width": "14%",
+                        "overflow": "hidden",
+                        "background":"url(./imgs/mcloud.png) no-repeat center",
+                        "margin-left": "42%",
+                        "background-size": "cover",
+                        "position": "fixed",
+                        "top":"14%"
+                      });
+                    else
+                      $(this).css({
+                        "width": "14%",
+                        "overflow": "hidden",
+                        "background":"url(./imgs/password.png) no-repeat center",
+                        "margin-left": "58%",
+                        "background-size": "cover",
+                        "position": "fixed",
+                        "top":"14%"
+                      });
+
+              });
+
+
+          $('.ancrsetting').hover(
+          function()
+              {
+
+                  if($(this).attr("id") == "ancr_guest")
+                      $(this).css({
+                        "width": "14%",
+                        "overflow": "hidden",
+                        "background":"url(./imgs/GuestHover.png) no-repeat center",
+                        "margin-left": "10%",
+                        "background-size": "cover",
+                        "position": "fixed",
+                        "top":"14%"
+
+                      });
+
+                    else if($(this).attr("id") == "ancr_intranet")
+                          $(this).css({
+                            "width": "14%",
+                            "overflow": "hidden",
+                            "background":"url(./imgs/IntranetHover.png) no-repeat center",
+                            "margin-left": "10%",
+                            "background-size": "cover",
+                            "position": "fixed",
+                            "top":"14%"
+                          });
+
+                    else if($(this).attr("id") == "network_setting")
+                      $(this).css({
+                        "width": "14%",
+                        "overflow": "hidden",
+                        "background":"url(./imgs/networksettingsHover.png) no-repeat center",
+                        "margin-left": "74%",
+                        "background-size": "cover",
+                        "position": "fixed",
+                        "top":"14%"
+                      });
+
+
+                  else if($(this).attr("id") == "ancr_lock")
+                      $(this).css({
+                        "width": "14%",
+                        "overflow": "hidden",
+                        "background":"url(./imgs/lockHover.png) no-repeat center",
+                        "margin-left": "26%",
+                        "background-size": "cover",
+                        "position": "fixed",
+                        "top":"14%"
+                      });
+                    else if($(this).attr("id") == "ancr_mcloud")
+                      $(this).css({
+                        "width": "14%",
+                        "overflow": "hidden",
+                        "background":"url(./imgs/mcloudHover.png) no-repeat center",
+                        "margin-left": "42%",
+                        "background-size": "cover",
+                        "position": "fixed",
+                        "top":"14%"
+                      });
+                    else
+                      $(this).css({
+                        "width": "14%",
+                        "overflow": "hidden",
+                        "background":"url(./imgs/passwordHover.png) no-repeat center",
+                        "margin-left": "58%",
+                        "background-size": "cover",
+                        "position": "fixed",
+                        "top":"14%"
+                      });
+
+              },
+             function()
+              {
+                  if($(this).attr("id") == "ancr_guest")
+                      $(this).css({
+                        "width": "14%",
+                        "overflow": "hidden",
+                        "background":"url(./imgs/Guest.png) no-repeat center",
+                        "margin-left": "10%",
+                        "background-size": "cover",
+                        "position": "fixed",
+                        "top":"14%"
+                      });
+
+                  else if($(this).attr("id") == "ancr_intranet")
+                      $(this).css({
+                        "width": "14%",
+                        "overflow": "hidden",
+                        "background":"url(./imgs/Intranet.png) no-repeat center",
+                        "margin-left": "10%",
+                        "background-size": "cover",
+                        "position": "fixed",
+                        "top":"14%"
+                        });
+
+                  else if($(this).attr("id") == "network_setting")
+                      $(this).css({
+                        "width": "14%",
+                        "overflow": "hidden",
+                        "background":"url(./imgs/networksettings.png) no-repeat center",
+                        "margin-left": "74%",
+                        "background-size": "cover",
+                        "position": "fixed",
+                        "top":"14%"
+                      });
+
+                  else if($(this).attr("id") == "ancr_lock")
+                      $(this).css({
+                        "width": "14%",
+                        "overflow": "hidden",
+                        "background":"url(./imgs/lock.png) no-repeat center",
+                        "margin-left": "26%",
+                        "background-size": "cover",
+                        "position": "fixed",
+                        "top":"14%"
+                      });
+                    else if($(this).attr("id") == "ancr_mcloud")
+                      $(this).css({
+                        "width": "14%",
+                        "overflow": "hidden",
+                        "background":"url(./imgs/mcloud.png) no-repeat center",
+                        "margin-left": "42%",
+                        "background-size": "cover",
+                        "position": "fixed",
+                        "top":"14%"
+                      });
+                    else
+                      $(this).css({
+                        "width": "14%",
+                        "overflow": "hidden",
+                        "background":"url(./imgs/password.png) no-repeat center",
+                        "margin-left": "58%",
+                        "background-size": "cover",
+                        "position": "fixed",
+                        "top":"14%"
+                      });
+
+              });
+      });
+
+   $(function() {
+         $('.intranet-box').hover(function() {
+             $('#corporatemsg').show();
+              }, function() {
+             $('#corporatemsg').hide();
+         });
+         $('.guest-box').hover(function() {
+             $('#guestmsg').show();
+              }, function() {
+             $('#guestmsg').hide();
+         });
+         $('.lock-box').hover(function() {
+             $('#lockmsg').show();
+              }, function() {
+             $('#lockmsg').hide();
+         });
+         $('.mcloud-box').hover(function() {
+             $('#mCloudmsg').show();
+              }, function() {
+             $('#mCloudmsg').hide();
+         });
+         $('.password-box').hover(function() {
+             $('#passwordmsg').show();
+              }, function() {
+             $('#passwordmsg').hide();
+         });
+
+         $('.network-box').hover(function() {
+             $('#neworksettingmsg').show();
+              }, function() {
+             $('#neworksettingmsg').hide();
+         });
+
+         $('.browser-box').hover(function() {
+             $('#browsermsg').show();
+              }, function() {
+             $('#browsermsg').hide();
+         });
+
+         $('.skype-box').hover(function() {
+             $('#skypemsg').show();
+              }, function() {
+             $('#skypemsg').hide();
+         });
+
+         $('.usbapp-box').hover(function() {
+             $('#usbmsg').show();
+              }, function() {
+             $('#usbmsg').hide();
+         });
+
+
+         $( ".intranet-box" ).focus(function() {
+           $('#corporatemsg').show();
+
+            });
+         $( ".intranet-box" ).focusout(function() {
+           $('#corporatemsg').hide();
+
+            });
+            $( ".guest-box" ).focus(function() {
+              $('#guestmsg').show();
+
+               });
+            $( ".guest-box" ).focusout(function() {
+              $('#guestmsg').hide();
+
+               });
+         $( ".lock-box" ).focus(function() {
+           $('#lockmsg').show();
+
+            });
+         $( ".lock-box" ).focusout(function() {
+           $('#lockmsg').hide();
+
+            });
+
+         $( ".mcloud-box" ).focus(function() {
+           $('#mCloudmsg').show();
+
+            });
+         $( ".mcloud-box" ).focusout(function() {
+           $('#mCloudmsg').hide();
+         });
+
+         $( ".password-box" ).focus(function() {
+           $('#passwordmsg').show();
+
+            });
+         $( ".password-box" ).focusout(function() {
+           $('#passwordmsg').hide();
+         });
+
+         $( ".network-box" ).focus(function() {
+           $('#neworksettingmsg').show();
+
+            });
+         $( ".network-box" ).focusout(function() {
+           $('#neworksettingmsg').hide();
+         });
+
+         $( ".browser-box" ).focus(function() {
+           $('#browsermsg').show();
+
+            });
+         $( ".browser-box" ).focusout(function() {
+           $('#browsermsg').hide();
+         });
+
+         $( ".skype-box" ).focus(function() {
+           $('#skypemsg').show();
+
+            });
+         $( ".skype-box" ).focusout(function() {
+           $('#skypemsg').hide();
+         });
+
+         $( ".usbapp-box" ).focus(function() {
+           $('#usbmsg').show();
+
+            });
+         $( ".usbapp-box" ).focusout(function() {
+           $('#usbmsg').hide();
+         });
+
+     });
+
+    $(function() {
+
+      $( "#ancr_Settings" ).click(function() {
+           $('#settingsdiv').show();
+           $('#appsdiv').hide();
+           $('#sliderdiv').hide();
+
+
+        });
+
+      $( "#ancr_Apps" ).click(function() {
+           $('#appsdiv').show();
+           $('#settingsdiv').hide();
+           $('#sliderdiv').hide();
+
+        });
+
+    });
+
+    $(function()
+     {
+      $('.ancrapps').focus(
+          function()
+              {
+
+                if($(this).attr("id") == "ancr_browser")
+                    $(this).css({
+                      "width": "14%",
+                      "overflow": "hidden",
+                      "background":"url(./imgs/Browserhover.png) no-repeat center",
+                      "margin-left": "10%",
+                      "background-size": "cover",
+                      "position": "fixed",
+                      "top":"14%"
+
+                    });
+                    else if($(this).attr("id") == "ancr_skype")
+                      $(this).css({
+                        "width": "14%",
+                        "overflow": "hidden",
+                        "background":"url(./imgs/skypehover.png) no-repeat center",
+                        "margin-left": "26%",
+                        "background-size": "cover",
+                        "position": "fixed",
+                        "top":"14%"
+                      });
+                else
+                    $(this).css({
+                      "width": "14%",
+                      "overflow": "hidden",
+                      "background":"url(./imgs/usbhover.png) no-repeat center",
+                      "margin-left": "42%",
+                      "background-size": "cover",
+                      "position": "fixed",
+                      "top":"14%"
+
+                    });
+
+
+
+
+              });
+
+          $('.ancrapps').focusout(
+          function()
+              {
+
+                if($(this).attr("id") == "ancr_browser")
+                    $(this).css({
+                      "width": "14%",
+                      "overflow": "hidden",
+                      "background":"url(./imgs/Browser.png) no-repeat center",
+                      "margin-left": "10%",
+                      "background-size": "cover",
+                      "position": "fixed",
+                      "top":"14%"
+
+                    });
+                    else if($(this).attr("id") == "ancr_skype")
+                      $(this).css({
+                        "width": "14%",
+                        "overflow": "hidden",
+                        "background":"url(./imgs/skype.png) no-repeat center",
+                        "margin-left": "26%",
+                        "background-size": "cover",
+                        "position": "fixed",
+                        "top":"14%"
+                      });
+                else
+                    $(this).css({
+                      "width": "14%",
+                      "overflow": "hidden",
+                      "background":"url(./imgs/usb.png) no-repeat center",
+                      "margin-left": "42%",
+                      "background-size": "cover",
+                      "position": "fixed",
+                      "top":"14%"
+
+                    });
+
+
+              });
+
+
+          $('.ancrapps').hover(
+          function()
+              {
+
+                if($(this).attr("id") == "ancr_browser")
+                    $(this).css({
+                      "width": "14%",
+                      "overflow": "hidden",
+                      "background":"url(./imgs/Browserhover.png) no-repeat center",
+                      "margin-left": "10%",
+                      "background-size": "cover",
+                      "position": "fixed",
+                      "top":"14%"
+
+                    });
+                    else if($(this).attr("id") == "ancr_skype")
+                      $(this).css({
+                        "width": "14%",
+                        "overflow": "hidden",
+                        "background":"url(./imgs/skypehover.png) no-repeat center",
+                        "margin-left": "26%",
+                        "background-size": "cover",
+                        "position": "fixed",
+                        "top":"14%"
+                      });
+                else
+                    $(this).css({
+                      "width": "14%",
+                      "overflow": "hidden",
+                      "background":"url(./imgs/usbhover.png) no-repeat center",
+                      "margin-left": "42%",
+                      "background-size": "cover",
+                      "position": "fixed",
+                      "top":"14%"
+
+                    });
+
+
+              },
+             function()
+              {
+                  if($(this).attr("id") == "ancr_browser")
+                      $(this).css({
+                        "width": "14%",
+                        "overflow": "hidden",
+                        "background":"url(./imgs/Browser.png) no-repeat center",
+                        "margin-left": "10%",
+                        "background-size": "cover",
+                        "position": "fixed",
+                        "top":"14%"
+
+                      });
+                      else if($(this).attr("id") == "ancr_skype")
+                        $(this).css({
+                          "width": "14%",
+                          "overflow": "hidden",
+                          "background":"url(./imgs/skype.png) no-repeat center",
+                          "margin-left": "26%",
+                          "background-size": "cover",
+                          "position": "fixed",
+                          "top":"14%"
+                        });
+                  else
+                      $(this).css({
+                        "width": "14%",
+                        "overflow": "hidden",
+                        "background":"url(./imgs/usb.png) no-repeat center",
+                        "margin-left": "42%",
+                        "background-size": "cover",
+                        "position": "fixed",
+                        "top":"14%"
+
+                      });
+                 });
+       $('#left-arrow').hover(
+        function(){
+          $(this).attr('src','./imgs/HoverLeftArrow.png')
+        },
+       function(){
+          $(this).attr('src','./imgs/LeftArrow.png')
+      });
+
+      $('#right-arrow').hover(
+       function(){
+         $(this).attr('src','./imgs/HoverRightArrow.png')
+       },
+      function(){
+         $(this).attr('src','./imgs/RightArrow.png')
+     });
+
+     $('#left-arrow').focus(
+       function(){
+         $(this).attr('src','./imgs/HoverLeftArrow.png')
+       });
+     $('#left-arrow').focusout(
+       function(){
+         $(this).attr('src','./imgs/LeftArrow.png')
+       });
+
+       $('#right-arrow').focus(
+         function(){
+           $(this).attr('src','./imgs/HoverRightArrow.png')
+         });
+       $('#right-arrow').focusout(
+         function(){
+           $(this).attr('src','./imgs/RightArrow.png')
+         });
+
+     $('#apps-left-arrow').hover(
+      function(){
+        $(this).attr('src','./imgs/HoverLeftArrow.png')
+      },
+     function(){
+        $(this).attr('src','./imgs/LeftArrow.png')
+    });
+
+    $('#apps-right-arrow').hover(
+     function(){
+       $(this).attr('src','./imgs/HoverRightArrow.png')
+     },
+    function(){
+       $(this).attr('src','./imgs/RightArrow.png')
+   });
+
+   $('#apps-left-arrow').focus(
+     function(){
+       $(this).attr('src','./imgs/HoverLeftArrow.png')
+     });
+   $('#apps-left-arrow').focusout(
+     function(){
+       $(this).attr('src','./imgs/LeftArrow.png')
+     });
+
+     $('#apps-right-arrow').focus(
+       function(){
+         $(this).attr('src','./imgs/HoverRightArrow.png')
+       });
+     $('#apps-right-arrow').focusout(
+       function(){
+         $(this).attr('src','./imgs/RightArrow.png')
+       });
+
+     $( "#ancr_intranet" ).on( "click", function() {
+       $('#ancr_intranet').hide();
+       $('#ancr_guest').show();
+       $('#corporateuserbottom').show();
+       $('#guestuserbottom').hide();
+       $('#intranetbackground').show();
+       $('#ipaddresswinlinux').show();
+       $('#wifinetwork').show();
+       $('#passwordguestmode').hide();
+       $('#ipguestmode').hide();
+       });
+
+     $( "#ancr_guest" ).on( "click", function() {
+       $('#ancr_intranet').show();
+       $('#ancr_guest').hide();
+       $('#corporateuserbottom').hide();
+       $('#guestuserbottom').show();
+       $('#guestbackground').show();
+       $('#intranetbackground').hide();
+       $('#ipaddresswinlinux').hide();
+       $('#wifinetwork').hide();
+       $('#passwordguestmode').show();
+       $('#ipguestmode').show();
+       });
+
+
+   });
+
+     </script>
+  </head>
+
+
+
+
+
+<body style="margin:0px;padding:0;overflow:hidden;background: black;">
+
+  <div class = "container" >
+    <div id="guestbg" >
+      <img id="guestbackground" src="./imgs/BGTransparent.png" style="position:fixed;width:100%;height:100%;"/>
+      <img id="intranetbackground" src="./imgs/CorporateBG.png" style="position:fixed;width:100%;height:100%;display:none;"/>
+    </div>
+
+
+
+
+
+    <div  style="display:none;" id="settingsdiv">
+      <div class="mySlides" >
+      <img class="appsdivcss" src="./imgs/AppandSettingBody.png"  />
+         <a href="#" class="guest-box ancrsetting" id="ancr_guest" style="display:none;"></a>
+         <a href="#" class="intranet-box ancrsetting" id="ancr_intranet"></a>
+         <a href="#" class="lock-box ancrsetting" id="ancr_lock"></a>
+         <a href="#" class="mcloud-box ancrsetting" id="ancr_mcloud"></a>
+         <a href="#" class="password-box ancrsetting" id="ancr_password"></a>
+         <a href="#" class="network-box ancrsetting" id="network_setting"></a>
+      </div>
+      <!-- <div class="mySlides">
+        <img class="appsdivcss" src="./imgs/AppandSettingBody.png" />
+      </div> -->
+
+      <a class="w3-btn-floating" id="floating-btn" style="position:fixed;top:25%; margin-left: 4%;" onclick="plusDivs(-1)"><img id="left-arrow" src="./imgs/LeftArrow.png" style="width:50%;"/></a>
+      <a class="w3-btn-floating" id="floating-btn2" style="position:fixed;top:25%;right:4%;" onclick="plusDivs(1)"><img id="right-arrow" src="./imgs/RightArrow.png" style="width:50%;" /></a>
+
+    <div class="messagedisplay">
+     <div id="corporatemsg" style="display:none;" >
+      <div class="block"><img src="./imgs/Settingshover-small.png" /></div>
+      <div style="color:#fff;font-size:40px;letter-spacing: 2px;" class="block">Corporate Mode:</div>
+      <div style="color:#686868;font-size: 24px;letter-spacing: 1px;" class="block">A kind of mode which connects corporate network</div>
+     </div>
+    </div>
+
+    <div class="messagedisplay">
+     <div id="guestmsg" style="display:none;" >
+      <div class="block"><img src="./imgs/Settingshover-small.png" /></div>
+      <div style="color:#fff;font-size:40px;letter-spacing: 2px;" class="block">Guest Mode:</div>
+      <div style="color:#686868;font-size: 24px;letter-spacing: 1px;" class="block">Present wirelessly from Guest mode</div>
+     </div>
+    </div>
+
+    <div class="messagedisplay">
+     <div id="lockmsg" style="display: none;">
+      <div class="block"><img src="./imgs/Settingshover-small.png" /></div>
+      <div class="block" style="color:#fff;font-size:40px;letter-spacing: 2px; ">Lock:</div>
+      <div class="block" style="color:#686868;font-size: 24px;letter-spacing: 1px;">This will lock your device  </div>
+     </div>
+    </div>
+
+    <div class="messagedisplay">
+     <div id="mCloudmsg" style="display:none;">
+      <div class="block"><img src="./imgs/Settingshover-small.png" /></div>
+      <div class="block" style="color:#fff;font-size:40px;letter-spacing: 2px;">mCloud:</div>
+      <div class="block" style="color:#686868;font-size: 24px;letter-spacing: 1px;">The meeting room iOT platform</div>
+     </div>
+    </div>
+
+    <div class="messagedisplay">
+     <div id="passwordmsg" style="display:none;">
+      <div class="block"><img src="./imgs/Settingshover-small.png" /></div>
+      <div class="block" style="color:#fff;font-size:40px;letter-spacing: 2px;">Password:</div>
+      <div class="block" style="color:#686868;font-size: 24px;letter-spacing: 1px;">You can reset your password here</div>
+     </div>
+    </div>
+
+    <div class="messagedisplay">
+     <div id="neworksettingmsg" style="display:none;">
+      <div class="block"><img src="./imgs/Settingshover-small.png" /></div>
+      <div class="block" style="color:#fff;font-size:40px;letter-spacing: 2px;">Network Setting:</div>
+      <div class="block" style="color:#686868;font-size: 24px;letter-spacing: 1px;">You can do your network setting here.</div>
+     </div>
+    </div>
+
+    </div>
+
+
+    <div class="appsdiv appsdivcss" id="appsdiv" style="display:none;">
+      <div class="mySlides2">
+      <img class="appsdivcss" src="./imgs/AppandSettingBody.png" />
+        <a href="#" class="browser-box ancrapps" id="ancr_browser"></a>
+        <a href="#" class="skype-box ancrapps" id="ancr_skype"></a>
+        <a href="#" class="usbapp-box ancrapps" id="ancr_usb"></a>
+      </div>
+
+      <!-- <div class="mySlides2">
+      <img class="appsdivcss" src="./imgs/AppandSettingBody.png" />
+      </div> -->
+
+      <a class="w3-btn-floating" id="floating-btn3" style="position:fixed;top:25%;margin-left:5%;" onclick="plusDivs2(-1)"><img id="apps-left-arrow" src="./imgs/LeftArrow.png" style="width:50%;"/></a>
+      <a class="w3-btn-floating" id="floating-btn4" style="position:fixed;top:25%;right:5%;" onclick="plusDivs2(1)"><img id="apps-right-arrow" src="./imgs/RightArrow.png" style="width:50%;" /></a>
+
+        <div class="messagedisplay">
+         <div id="browsermsg" style="display:none;">
+          <div class="block"><img src="./imgs/GuestHover-small.png" /></div>
+          <div class="block" style="color:#fff;font-size:40px;letter-spacing: 2px;">Browser:</div>
+          <div class="block" style="color:#686868;font-size: 24px;letter-spacing: 1px;">Browse using our inbuilt browser.</div>
+         </div>
+        </div>
+        <div class="messagedisplay">
+         <div id="skypemsg" style="display:none;">
+          <div class="block"><img src="./imgs/GuestHover-small.png" /></div>
+          <div class="block" style="color:#fff;font-size:40px;letter-spacing: 2px;">Skype:</div>
+          <div class="block" style="color:#686868;font-size: 24px;letter-spacing: 1px;">Login into your skype account.</div>
+         </div>
+        </div>
+        <div class="messagedisplay">
+         <div id="usbmsg" style="display:none;">
+          <div class="block"><img src="./imgs/GuestHover-small.png"/></div>
+          <div class="block" style="color:#fff;font-size:40px;letter-spacing: 2px;">USB:</div>
+          <div class="block" style="color:#686868;font-size: 24px;letter-spacing: 1px;">Connect your device using USB.</div>
+         </div>
+        </div>
+    </div>
+
+    <div class="slidercss" id="sliderdiv">
+        <img id="slideshow " src="./imgs/mikethefrog.jpg " style="width:100%;height:100%;object-fit: contain">
+    </div>
+
+    <a href="#" class="apps-box ancr" id="ancr_Apps"></a>
+    <img src="./imgs/divider.png" class="divider-box" />
+    <a href="#" class="setting-box ancr" id="ancr_Settings"></a>
+
+    <div id="">
+      <div class="textinputip" id=" ">IP:192.168.43.1</div>
+    </div>
+
+    <div id="">
+      <div class="textinputotp" id=" ">OTP:123456</div>
+    </div>
+
+    <div id="ipguestmode">
+      <div class="ipguestmode" id=" ">IP address</div>
+    </div>
+
+    <div id="passwordguestmode">
+      <div class="passwordguestmode" id=" ">password</div>
+    </div>
+
+    <div id="appleprijectorname">
+      <div class="appleprijectorname" id=" ">device name</div>
+    </div>
+
+    <div id="androidprijectorname">
+      <div class="androidprijectorname" id=" ">device name</div>
+    </div>
+
+    <div id="wifinetwork" style="display:none;">
+      <div class="wifinetwork" id=" ">Wifi network</div>
+    </div>
+
+    <div id="ipaddresswinlinux" style="display:none;">
+      <div class="ipaddresswinlinux" id=" ">ip address</div>
+    </div>
+
+    <div id="">
+      <img id="guestuserbottom" src="./imgs/GuestUserBottom.png" style="position:fixed;width:10%;height:4%;bottom:1.5%;margin-left:88%;" />
+      <img id="corporateuserbottom" src="./imgs/CorpoareUserBottom.png" style="position:fixed;width:12%;height:4%;bottom:1.5%;margin-left:86%;display:none;" />
+    </div>
+
+  </div>
+
+
+
+
+   <script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+  buttonfloat();
+
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    x[slideIndex-1].style.display = "block";
+  }
+
+  function buttonfloat(){
+    var x = document.getElementsByClassName("mySlides");
+    if (x.length < 2)
+    {
+       $('#floating-btn').hide();
+       $('#floating-btn2').hide();
+    }
+  }
+
+  var slideIndex2 = 1;
+  showDivs2(slideIndex2);
+  buttonfloat2();
+
+  function plusDivs2(n) {
+    showDivs2(slideIndex2 += n);
+  }
+
+  function showDivs2(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides2");
+    if (n > x.length) {slideIndex2 = 1}
+    if (n < 1) {slideIndex2 = x.length}
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    x[slideIndex2-1].style.display = "block";
+  }
+
+  function buttonfloat2(){
+    var x = document.getElementsByClassName("mySlides2");
+    if (x.length < 2)
+    {
+       $('#floating-btn3').hide();
+       $('#floating-btn4').hide();
+    }
+
+  }
+</script>
+</body>
+</html>
